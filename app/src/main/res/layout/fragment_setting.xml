@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SettingFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="25dp"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/amethysta"
+        android:text="Demo name "
+        android:textSize="25sp"
+         />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo name "
+        android:layout_gravity="center"
+        android:layout_marginTop="05dp"
+        android:fontFamily="@font/amethysta"
+        android:textSize="25sp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="My Profile"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="Help"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/insurance" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="Privacy policy"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/money" />
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="Payment Methods "
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@drawable/button_primary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+</LinearLayout>
+</FrameLayout>
